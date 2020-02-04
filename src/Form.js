@@ -16,7 +16,8 @@ class Form extends React.Component {
   };
   onSubmit = (e) => { 
       e.preventDefault(); 
-      console.log(this.state);
+      this.props.onSubmit(this.state);
+    //   console.log(this.state);
   }
 
   render(){
